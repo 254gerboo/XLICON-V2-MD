@@ -23,16 +23,16 @@ module.exports = {
     sentOnce.add(m.id);
 
     if (!owners.includes(m.sender)) {
-      return await m.send('⛔ You are not authorized to use this command.');
+      return;
     }
 
     const code = m.text.slice(1).trim();
 
-    const info = '*XLICON V2*';
-    const imgUrl = 'https://i.ibb.co/rfsYsGn1/Ayanokouji-1.jpg';
-    const author = 'XLICON V2';
-    const botname = 'XLICON V2 ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ';
-    const sourceUrl = 'https://ahmmitech.live/';
+    const info = '*XLICON Exec*';
+    const imgUrl = 'https://i.ibb.co/39GRRMX2/img-2m0cfk6r.jpg';
+    const author = 'XLIOCN V2';
+    const botname = 'XLIOCN  ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ';
+    const sourceUrl = 'https://abztech.my.id/';
 
     try {
       const sandbox = {
@@ -41,6 +41,7 @@ module.exports = {
         axios,
         util,
         console,
+        proto, 
         generateWAMessageFromContent: global.generateWAMessageFromContent
       };
 
