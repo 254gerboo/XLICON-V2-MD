@@ -1,27 +1,42 @@
 {
   "name": "XLICON_MD_V2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Xlicon WhatsApp Bot",
   "main": "index.js",
+  "type": "commonjs",
   "scripts": {
-    "start": "pm2 start index.js --attach --no-daemon"
+    "start": "pm2 start index.js --deep-monitoring --attach --name Xlicon",
+    "stop": "pm2 stop Xlicon",
+    "restart": "pm2 restart Xlicon",
+    "bot": "node index.js"
   },
-  "author": "XLIOCN V2",
+  "author": "XLICON_MD_V2",
   "license": "MIT",
   "private": true,
-  "keywords": [],
+  "keywords": [
+    "whatsapp-bot",
+    "baileys",
+    "xlicon"
+  ],
   "dependencies": {
     "@ffmpeg-installer/ffmpeg": "^1.1.0",
     "@hapi/boom": "^10.0.1",
-    "@whiskeysockets/baileys": "^6.7.18",
+    "@whiskeysockets/baileys": "npm:gifted-baileys@2.0.0",
     "axios": "^1.6.8",
+    "gifted-btns": "^1.0.0",
     "node-fetch": "^2.7.0",
     "os": "^0.1.2",
     "pino": "^8.17.0",
     "qrcode": "^1.5.1",
     "qrcode-terminal": "^0.12.0",
     "sqlite3": "^5.1.6",
-    "wa-sticker-formatter": "^4.4.4"
+    "wa-sticker-formatter": "^4.4.4",
+    "express": "*",
+    "body-parser": "*",
+    "fs": "*",
+    "path": "*",
+    "pino-pretty": "^13.0.0",
+    "dotenv": "^17.2.3"
   },
   "devDependencies": {
     "pm2": "^5.3.0"
