@@ -17,7 +17,7 @@ module.exports = {
 
             const name = m.pushName || m.sender.split('@')[0];
             const audioUrl = 'https://files.catbox.moe/t1zkqo.mp3';
-            const thumbnail = 'https://i.ibb.co/rfsYsGn1/Ayanokouji-1.jpg';
+            const thumbnail = 'https://files.catbox.moe/uz899q.jpg';
             const quoted = {
                 key: {
                     fromMe: false,
@@ -36,13 +36,13 @@ module.exports = {
                 {
                     audio: { url: audioUrl },
                     mimetype: 'audio/mpeg',
-                    ptt: true,
+                    ptt: false,
                     waveform: [100, 0, 100, 0, 100, 0, 100],
                     fileName: 'OwnerTag',
                     contextInfo: {
                         mentionedJid: [m.sender],
                         externalAdReply: {
-                            title: "You tagged my owner XLICON V2",
+                            title: "You tagged my owner Abraham",
                             body: 'XLIOCN V2 ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ',
                             thumbnailUrl: thumbnail,
                             sourceUrl: 'https://www.whatsapp.com/channel/0029VaMGgVL3WHTNkhzHik3c',
@@ -57,7 +57,7 @@ module.exports = {
             await m.react("✨");
 
         } catch (err) {
-            console.error('❌ Mention-owner plugin error:', err);
+            console.error('Mention-owner plugin error:', err);
         }
     }
 };
