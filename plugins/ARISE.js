@@ -10,15 +10,15 @@ module.exports = {
         if (m.isBot || !m.text) return;
 
         const text = m.text.trim().toLowerCase();
-        const triggers = ['arise', 'test', 'bot', 'rise'];
+        const triggers = ['arise', 'rise'];
         const isTriggered = triggers.some(word => text.startsWith(word));
 
         if (isTriggered) {
             const info = '*BOT ACTIVE AND RUNNING...*';
-            const imgUrl = 'https://i.ibb.co/rfsYsGn1/Ayanokouji-1.jpg';
+            const imgUrl = 'https://files.catbox.moe/uz899q.jpg';
             const author = 'XLIOCN V2';
             const botname = 'XLIOCN V2 ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ';
-            const sourceUrl = 'https://ahmiikun.live/';
+            const sourceUrl = 'https://abztech.my.id/';
 
             try {
                 const thumbnailBuffer = (await axios.get(imgUrl, { responseType: 'arraybuffer' })).data;
