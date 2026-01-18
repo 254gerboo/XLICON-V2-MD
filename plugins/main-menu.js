@@ -8,12 +8,12 @@ module.exports = {
         const prefix = '.';
 
         const menuText = `
-             XLIOCN V2 *ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ*  
+            XLIOCN *ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ*  
 
   ┌─ム *Available Commands*
   ┃ ᪣  ${prefix}alive
-  ┃ ᪣  ${prefix}arise
-  ┃ ᪣  ${prefix}chatbot
+  ┃ ᪣  arise
+  ┃ ᪣  ${prefix}poll
   ┃ ᪣  ${prefix}couplepp
   ┃ ᪣  ${prefix}owner
   ┃ ᪣   >
@@ -22,14 +22,15 @@ module.exports = {
   ┃ ᪣  ${prefix}tagall
   ┃ ᪣  ${prefix}tagme
   ┃ ᪣  ${prefix}uptime
+  ┃ ᪣  ${prefix}tts
   ╰─────────◆────────╯
 > 「 𝙏𝙞𝙢𝙚 - 𝙏𝙞𝙢𝙚𝙡𝙚𝙨𝙨 」
         `.trim();
 
-        const imgUrl = 'https://i.ibb.co/rfsYsGn1/Ayanokouji-1.jpg';
-        const author = 'XLIOCN V2';
-        const botname = 'XLIOCN V2 ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ';
-        const sourceUrl = 'https://ahmmikun.live/';
+        const imgUrl = 'https://files.catbox.moe/uz899q.jpg';
+        const author = 'XLICON V2';
+        const botname = 'XLICON ᴍᴜʟᴛɪᴅᴇᴠɪᴄᴇ';
+        const sourceUrl = 'https://abztech.my.id/';
 
         try {
             const thumbnailBuffer = (await axios.get(imgUrl, { responseType: 'arraybuffer' })).data;
